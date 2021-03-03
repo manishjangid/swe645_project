@@ -14,5 +14,5 @@ spec:
         app: tomcat
     spec:
       containers:
-      - image: spurthiaddagada/studentform:v1
+      - image: spurthiaddagada/tomcat:v1
         name: tomcat
