@@ -4,6 +4,9 @@ metadata:
   name: tomcat
 spec:
   replicas: 3
+  selector:
+    matchLabels:
+      app: tomcat
   template:
     metadata:
       name: tomcat
