@@ -16,3 +16,4 @@ spec:
       containers:
       - image: spurthiaddagada/tomcat:v1
         name: tomcat
+        imagePullPolicy: Always
