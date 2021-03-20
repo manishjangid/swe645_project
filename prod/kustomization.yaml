@@ -4,6 +4,6 @@ resources:
 - ./deployment.yaml
 - ./service.yaml
 images:
-- name: IMAGE_PLACEHOLDER
+- name: IMAGE_PLACEHOLDERR
   newName: spurthiaddagada/tomcat
   newTag: 6e9cf87d013cb2ca5e5b87ccfa83e93b7664b968
