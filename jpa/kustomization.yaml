@@ -3,5 +3,7 @@ kind: Kustomization
 resources:
 - ./deployment.yaml
 images:
+- name: manishkumar2020/jparest
+  newTag: afad5b9
 - name: manishkumar2020/jparestful
   newTag: v1
