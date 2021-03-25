@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jparestul
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jparestful
+  template:
+    metadata:
+      labels:
+        app: jparestful
+      name: jparestful
+    spec:
+      containers:
+      - image: manishkumar2020/jparestful:v1
+        imagePullPolicy: Always
+        name: jparestful
