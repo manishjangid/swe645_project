@@ -1,3 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: tomcat
+  name: tomcat
+  namespace: default
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: tomcat
+  type: NodePort
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -17,3 +33,4 @@ spec:
       - image: manishkumar2020/jparest:2a3319d
         imagePullPolicy: Always
         name: jparest
+
