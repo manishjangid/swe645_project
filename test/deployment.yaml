@@ -19,7 +19,7 @@ kind: Deployment
 metadata:
   name: tomcat
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: tomcat
