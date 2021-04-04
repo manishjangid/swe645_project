@@ -30,6 +30,6 @@ spec:
       name: tomcat
     spec:
       containers:
-      - image: manishkumar2020/tomcat:524f7b1
+      - image: manishkumar2020/tomcat:d963f9c
         imagePullPolicy: Always
         name: tomcat
