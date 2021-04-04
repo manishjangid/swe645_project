@@ -4,4 +4,4 @@ resources:
 - ./deployment.yaml
 images:
 - name: manishkumar2020/tomcat
-  newTag: 875dba0
+  newTag: 524f7b1
