@@ -4,4 +4,4 @@ resources:
 - ./deployment.yaml
 images:
 - name: manishkumar2020/jparest
-  newTag: 9fe84bd
+  newTag: 6034bb7
