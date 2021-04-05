@@ -5,4 +5,4 @@ secretGenerator:
   literals:
   - password=Get12345
 resources:
-  - mysql-deployment.yaml
+  - ./mysql-deployment.yaml
