@@ -48,7 +48,7 @@ spec:
     matchLabels:
       app: mysql # has to match .spec.template.metadata.labels
   serviceName: "mysql"
-  replicas: 3 # by default is 1
+  replicas: 1 # by default is 1
   template:
     metadata:
       labels:
