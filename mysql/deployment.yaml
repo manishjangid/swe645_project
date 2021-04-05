@@ -37,7 +37,7 @@ spec:
   selector:
     app: mysql
     tier: mysql
-  clusterIP: None
+  type: NodePort
 ---
 apiVersion: apps/v1
 kind: StatefulSet
