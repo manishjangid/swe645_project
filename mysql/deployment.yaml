@@ -28,7 +28,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mysql
+  name: mysql-svc
   labels:
     app: mysql
 spec:
@@ -47,7 +47,7 @@ spec:
   selector:
     matchLabels:
       app: mysql # has to match .spec.template.metadata.labels
-  serviceName: "mysql"
+  serviceName: "mysql-svc"
   replicas: 1 # by default is 1
   template:
     metadata:
