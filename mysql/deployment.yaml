@@ -28,21 +28,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mysql-svc
-  labels:
-    app: mysql
-spec:
-  ports:
-    - port: 3306
-  selector:
-    app: mysql
-    tier: mysql
-  clusterIP : None
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: mysql-np
+  name: mysql-0
   labels:
     app: mysql
 spec:
@@ -50,9 +36,8 @@ spec:
   ports:
     - port: 3306
   selector:
-    app: mysql
-    tier: mysql
-  type: NodePort
+    statefulset.kubernetes.io/pod-name: mysql-0
+  clusterIP : None
 ---
 apiVersion: apps/v1
 kind: StatefulSet
@@ -62,7 +47,7 @@ spec:
   selector:
     matchLabels:
       app: mysql # has to match .spec.template.metadata.labels
-  serviceName: "mysql-svc"
+  serviceName: "mysql-0"
   replicas: 1 # by default is 1
   template:
     metadata:
