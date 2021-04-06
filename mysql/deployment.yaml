@@ -32,12 +32,13 @@ metadata:
   labels:
     app: mysql
 spec:
+  externalTrafficPolicy: Local
   ports:
     - port: 3306
   selector:
     app: mysql
     tier: mysql
-  clusterIP: None
+  type: NodePort
 ---
 apiVersion: apps/v1
 kind: StatefulSet
