@@ -37,7 +37,7 @@ spec:
     - port: 3306
   selector:
     statefulset.kubernetes.io/pod-name: mysql-0
-  clusterIP : None
+  type: NodePort
 ---
 apiVersion: apps/v1
 kind: StatefulSet
