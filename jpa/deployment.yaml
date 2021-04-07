@@ -30,6 +30,6 @@ spec:
       name: jparest
     spec:
       containers:
-      - image: manishkumar2020/jparest:7bfc06d
+      - image: manishkumar2020/jparest:a1bbd80
         imagePullPolicy: Always
         name: jparest
