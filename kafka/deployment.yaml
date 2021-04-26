@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: kafkarest
+  name: kafkarest
+  namespace: default
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: kafkarest
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafkarest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kafkarest
+  template:
+    metadata:
+      labels:
+        app: kafkarest
+      name: kafkarest
+    spec:
+      containers:
+      - image: manishkumar2020/kafkarest:a1bbd80
+        imagePullPolicy: Always
+        name: jparest
