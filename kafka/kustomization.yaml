@@ -4,4 +4,4 @@ resources:
 - ./deployment.yaml
 images:
 - name: manishkumar2020/kafka
-  newTag: cfb9cd2
+  newTag: e1e1f52
