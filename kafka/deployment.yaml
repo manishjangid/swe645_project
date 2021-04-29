@@ -30,6 +30,6 @@ spec:
       name: kafkarest
     spec:
       containers:
-      - image: manishkumar2020/kafka:623c137
+      - image: manishkumar2020/kafka:f384dfb
         imagePullPolicy: Always
         name: jparest
